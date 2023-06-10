@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript" src="js/userInfo.js"></script>
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body onload="loadUserInfo();">
+
+    <header style="background-color: #0088ff;">
+        <h1>Dashboard</h1>
+        <img src="Images/logo.jpg" height="110" class="logo_move">
+        <div class="dropdown">
+            <img id="myImg3" height="110" class="dropbtn">
+            <div class="dropdown-content">
+                <a href="contactUs.html">Contact Us</a>
+                <a href="aboutUs.html">About Us</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="dashbox">
+        <form action="php/BookInsert.php" method="post">
+
+            <br> </br>
+
+            <button class="buttonstyle">Add Book</button>
+
+            <br> </br>
+
+            <p class="add">Add your book so other users can borrow it</p>
+
+        </form>
+
+        <form action="booksearch.html">
+
+            <br> </br>
+            <br> </br>
+
+            <button class="buttonstyle">Search Book</button>
+
+            <br> </br>
+
+            <p class="search">Search for a book to borrow</p>
+
+        </form>
+
+        <form action="php/mybook.php" method="post">
+
+            <br> </br>
+            <br> </br>
+
+            <button class="buttonstyle">My Books</button>
+
+            <br> </br>
+
+            <p class="mybooks">See my books</p>
+
+        </form>
+
+        <form action="account.html" method="post">
+            <br> </br>
+            <br> </br>
+
+            <button class="buttonstyle">My Account</button>
+
+            <br> </br>
+
+            <p class="mybooks">See my profile</p>
+        </form>
+
+        <form action="php/logout.php" method="post">
+
+            <br> </br>
+            <br> </br>
+
+            <button class="buttonstyle">Log Out</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+body {
+    background-color:lightblue;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(49, 46, 46);
+    text-align: center;
+} 
+
+.buttonstyle {
+    margin: 10px;
+    padding: 15px;
+    background-color: grey;
+    border: none;
+    color: white;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+
+    position: fixed;
+    left: 930px;
+    bottom: 175px;
+}
+
+main {
+    width: 680px;
+}
+
+p {
+    display: inline-block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+p input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#dashbox {
+    box-sizing: border-box;
+    border: 4px solid grey;
+    margin: 10px;
+    padding: 10px;
+    width: 550px;
+    height: 460px;
+    text-align: center;
+    display: inline-block;
+    position: fixed;
+    left: 690px;
+    top: 200px;
+}
+
+.formCon {
+    position: fixed;
+    left: 175px;
+    top: 220px;
+}
+
+
+.boxalign {
+    position: absolute;
+    left: 150px;
+    top: 0px;
+}
+
+/* fields */
+.booktitle {
+    position: absolute;
+    left: 640px;
+    top: 25px;
+    font-size: 23px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.bookauthor {
+    position: absolute;
+    left: 640px;
+    top: 75px;
+    font-size: 25px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.publishedyear {
+    position: absolute;
+    left: 640px;
+    top: 130px;
+    font-size: 25px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.memo {
+    position: absolute;
+    left: 640px;
+    top: 175px;
+    font-size: 25px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.isbn {
+    position: absolute;
+    left: 640px;
+    top: 235px;
+    font-size: 25px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.barcode {
+    position: absolute;
+    left: 640px;
+    top: 285px;
+    font-size: 25px;
+    font-family: 'Barlow', sans-serif;
+} 
+
+.category {
+    position: absolute;
+    left: 640px;
+    top: 345px;
+    font-size: 25px;
+    font-family: 'Barlow', sans-serif; 
+} 
+
+@media only screen and (max-width: 1024px) {
+    .main {
+        width: 100%
+    }
+
+    .body {
+        width: 100%
+    }
+
+    header {
+        width: 100%
+
+    }
+
+    body {
+        background: lightblue;
+    }
+
+    p input {
+        padding-top: 25px;
+        padding-bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .logo_move {
+        display: none;
+    }
+    body {
+        background: lightblue;
+    }
+}

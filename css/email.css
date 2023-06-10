@@ -1,0 +1,63 @@
+header {
+    background: #333a40;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+} 
+
+.dashbutton {
+    margin: 10px;
+    padding: 15px;
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button1 {
+    margin: 10px;
+    padding: 15px;
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+main {
+    width: 680px;
+}
+
+.big {
+    display: inline-block;
+}
+
+.owner {
+    display: inline-block;
+}
+
+.vl {
+    border-left: 6px solid grey;
+    height: 804px;
+    position: absolute;
+    left: 15%;
+    margin-left: -3px;
+    top: 165px;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background: white;
+    margin: 0 auto; 
+    color: rgb(49, 46, 46);
+    text-align: center;
+}  

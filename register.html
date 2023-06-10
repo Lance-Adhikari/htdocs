@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Create Account</h1>
+    
+    <img src="Images/logo.jpg" height="110" class="logo_move">
+    
+    <div class="contact">
+        <a style="text-decoration:none;" href="contactUs.html">Contact Us</a>
+    </div>
+
+    <div class="about">
+        <a style="text-decoration:none;" href="aboutUs.html">About Us</a>
+    </div>
+</header> 
+
+<p class="required">Please Enter All * Fields</p>
+
+<form action="php/register.php" method="post">
+
+    <br> </br>
+    <br> </br>
+
+    <div> 
+        <fieldset class="fieldset1">
+            <p class="firstname">
+                <label>*Enter your first name:</label>
+                <input name="firstName" type="text" required>
+            </p>
+
+            <br> </br>
+            <br> </br>
+
+            <p class="lastname">
+                <label>*Enter your last name:</label>
+                <input name="lastName" type="text" required>
+            </p>
+
+            <br> </br>
+            <br> </br>
+
+            <p class="email">
+                <label>*Enter your email:</label>
+                <input name="email" type="email" required>
+            </p>
+
+            <br> </br>
+            <br> </br>
+
+            <p class="phonenumber">
+                <label>Enter your phone number:</label>
+                <input name="phoneNumber" type="tel">
+            </p>
+        </fieldset>
+    </div>
+
+    <div> 
+        <fieldset class="fieldset2">
+            <p class="username">
+                <label>*Enter a username:</label>
+                <input name="username" type="text" required>
+            </p>
+
+            <br> </br>
+            <br> </br>
+
+            <p id="password" class="password">
+                <label>*Enter a password:</label>
+                <input name="password" type="password" required>
+            </p>
+
+            <br> </br>
+            <br> </br>
+
+            <p id="password2" class="password2">
+                <label>*Confirm your password:</label>
+                <input name="password2" type="password" required>
+            </p>   
+        </fieldset>
+    </div>
+    
+        <button class="regbutton">Register</button>
+    </form>
+
+    <form action="login.html" method="post">
+        <p>
+            <label class="loglabel">Already have an account?</label>
+            <button class="logbutton">Login</button>
+        </p>
+    </form>
+</body>
+</html>

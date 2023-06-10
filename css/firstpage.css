@@ -1,0 +1,219 @@
+/* body */
+body {
+    background-color:lightblue;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(49, 46, 46);
+    text-align: center;
+} 
+
+main {
+    width: 680px;
+}
+
+/* Activities */
+
+.regbutton {
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top:300px;
+}
+
+.logo_move {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    bottom: 0px;
+    right: 0px;
+    overflow: auto;
+    font-size: 20px;
+}
+
+.motto {
+    position: absolute;
+    font-size: 20px;
+    top: 220px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.media_platform {
+    /* background part */
+    background: lightblue;
+    color:white;
+    padding: 15px 20px;
+
+    /* text */
+    font-size: 35px;
+    font-family: 'Barlow', sans-serif;
+
+    /* position */
+    position: relative;
+    top: 700px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.commvideo {
+    position: absolute;
+    top: 600px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+} 
+
+.updates_and_fixes {
+    /* background part */
+    background: lightblue;
+    color:white;
+    padding: 10px 20px;
+
+    /* text */
+    font-size: 35px;
+    font-family: 'Barlow', sans-serif;
+    
+    /* position */
+    position: relative;
+    top: 1100px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+
+@media only screen and (max-width: 1920px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .main {
+        width: 100%
+    }
+
+    .body {
+        width: 100%
+    }
+
+    header {
+        width: 100%
+
+    }
+
+    .motto {
+        position: absolute;
+        font-size: 50px;
+        top: 220px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+    }
+
+    .regbutton {
+        align-items: center;
+        text-align: center;
+        font-size: 40px;
+        background-color: grey;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        top:700px;
+    }
+
+    .commvideo {
+        position: absolute;
+        top: 1050px;  
+    } 
+
+    .media_platform {
+        /* background part */
+        background: orange;
+        color:white;
+        padding: 15px 20px;
+    
+        /* text */
+        font-size: 35px;
+        font-family: 'Barlow', sans-serif;
+    
+        /* position */
+        position: relative;
+        top: 1150px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+    }
+
+    .updates_and_fixes {
+        /* background part */
+        background: orange;
+        color:white;
+        padding: 10px 20px;
+    
+        /* text */
+        font-size: 35px;
+        font-family: 'Barlow', sans-serif;
+        
+        /* position */
+        position: relative;
+        top: 1650px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+    }
+
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .logo_move {
+        display: none;
+    }
+    body {
+        background: lightblue;
+    }
+}

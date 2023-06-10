@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+<header style="background-color: #0088ff;">
+    <h1>Login</h1>
+    
+    <img src="Images/logo.jpg" height="110" class="logo_move">
+    
+    <div class="contact">
+        <a style="text-decoration:none;" href="contactUs.html">Contact Us</a>
+    </div>
+
+    <div class="about">
+        <a style="text-decoration:none;" href="aboutUs.html">About Us</a>
+    </div>
+</header> 
+
+<form action="php/process.php" method="post">
+    <fieldset class="logfieldset">
+
+        <br> </br>
+        <br> </br>
+
+        <p class="username">
+            <label>Enter your username:</label>
+            <input name="username" type="text" required>
+        </p>
+
+        <br> </br>
+        <br> </br>
+        <br> </br>
+
+        <p class="password">
+            <label>Enter your password:</label>
+            <input name="password" type="password" required>
+        </p>
+   
+    </fieldset>
+
+    <button class="logbutton">Login</button>
+</form>
+
+<form action="register.html">
+    <p>
+        <label class="textforregbutton">Please register if you don't have an account</label>
+        <button class="regbutton">Register</button>
+    </p>
+</form>
+
+<div class="changepassword"> 
+    <a style="text-decoration:none;" href="php/changePassword.php"> <h3>Forgot Password?</h3> </a>
+</div>
+
+</body>
+</html>

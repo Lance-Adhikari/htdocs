@@ -1,0 +1,79 @@
+body {
+    background-color:lightblue;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(49, 46, 46);
+    text-align: center;
+} 
+
+.buttonstyle {
+    margin: 10px;
+    padding: 15px;
+    background-color: grey;
+    border: none;
+    color: white;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+
+    position: fixed;
+    left: 930px;
+    bottom: 175px;
+}
+
+main {
+    width: 680px;
+}
+
+p {
+    display: inline-block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+p input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logfieldset {
+    height: 400px;
+    width: 1000px;
+
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 105px;
+    padding-top: 1px;
+
+    position: relative;
+    top: 50px;
+}
+
+.formCon {
+    position: fixed;
+    left: 175px;
+    top: 220px;
+}
+/* fields */
+.userid {
+    font-family: 'Barlow', sans-serif;
+}
+
+.firstname {
+    font-family: 'Barlow', sans-serif;
+}
+
+.lastname {
+    font-family: 'Barlow', sans-serif;
+}
+
+.phonenumber {
+    font-family: 'Barlow', sans-serif;
+}
+
+.email {
+    font-family: 'Barlow', sans-serif;
+}

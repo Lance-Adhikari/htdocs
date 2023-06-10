@@ -1,0 +1,169 @@
+body {
+    background-color:lightblue;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(49, 46, 46);
+    text-align: center;
+} 
+
+.buttonstyle {
+    margin: 10px;
+    padding: 15px;
+    background-color: grey;
+    border: none;
+    color: white;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+
+    position: fixed;
+    left: 900px;
+    bottom: 550px;
+}
+
+main {
+    width: 680px;
+}
+
+p {
+    display: inline-block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
+
+p input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input[type="search"] {
+    size: 20px;
+    display: inline-block;
+} 
+
+#dashbox {
+    box-sizing: border-box;
+    border: 4px solid grey;
+    margin: 10px;
+    padding: 10px;
+    width: 1100px;
+    height: 250px;
+    text-align: center;
+    display: inline-block;
+
+    position: absolute;
+    left: 375px;
+    top: 200px;
+}
+
+.searchLabel {
+    font-size: 25px;
+    font-family: 'Barlow', sans-serif;
+
+    position: absolute;
+    left: 425px;
+    top: 250px;
+}
+
+.filterSearch {
+    font-size: 25px;
+    font-family: 'Barlow', sans-serif;
+    width: 12%;
+    position: absolute;
+    left: 595px;
+    top: 250px;
+}
+
+.searchBook {
+    font-size: 25px;
+    font-family: 'Barlow', sans-serif;
+    width: 30%;
+    position: absolute;
+    left: 875px;
+    top: 250px;
+}
+
+.searchbut {
+    margin: 10px;
+    padding: 15px;
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    position: absolute;
+    top: 350px;
+    left: 520px;
+}
+
+.resultTable {
+    text-align: center;
+    position: absolute;
+    left: 525px;
+    top: 550px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main {
+        width: 100%
+    }
+
+    .body {
+        width: 100%
+    }
+
+    header {
+        width: 100%
+
+    }
+
+    body {
+        background: lightblue;
+    }
+
+    p input {
+        padding-top: 25px;
+        padding-bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        background: lightblue;
+    }
+}

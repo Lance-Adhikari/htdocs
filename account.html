@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript" src="js/userInfo.js"></script>
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="css/popup.css" />
+
+<head>
+    <title>My Account</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+
+  <header style="background-color: #0088ff;">
+    <h1>My Account</h1>
+    <img src="Images/logo.jpg" height="110" class="logo_move">
+    <div class="dropdown">
+      <img id="myImg" height="110" class="dropbtn">
+      <div class="dropdown-content">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contactUs.html">Contact Us</a>
+        <a href="aboutUs.html">About Us</a>
+      </div>
+    </div>
+  </header>
+
+  <body onload="loadUserInfo();">
+    <img id="myImg2" height="100px" width="100px" />
+    <br> <br>
+    <form action="php/loadProfile.php" method="post" enctype="multipart/form-data">
+      Select new profile picture:
+      <input type="file" name="fileToUpload" style="width:90px;" onchange="this.color='transparent';">
+      <br> <br>
+      <input type="submit" value="Upload Image" name="submit"> 
+    </form>
+
+    <fieldset>
+      <br> <br>
+      <label>Account Id:</label> <input type="text" id="uid" class="userid" readonly>
+      <br> <br>
+      <label>First Name:</label> <input type="text" id="fn" class="firstname" readonly>
+      <br> <br>
+      <label>Last Name:</label> <input type="text" id= "ln" class="lastname" readonly>
+      <br> <br>
+      <label>Phonenumber:</label> <input type="text" size="11" id ="pn" class="phonenumber" readonly>
+      <br> <br>
+      <label>Email:</label> <input type="text" id="em" class="email" size="30" readonly>
+      <br> <br>
+
+      <div id="updateprofile">
+        <input type="submit" id="updateprofile" name="updateprofile" value="Click Here to Edit Profile" />
+      </div>
+    </fieldset> 
+
+    <div id="updateprofile-popup">
+      <form class="updateprofile-form" action="" id="updateprofile-form" method="post" enctype="multipart/form-data">
+        <h1>Update Your Information</h1>
+            <div>
+
+              <div>
+                <label>First Name: </label><span id="fn" class="firstname"></span>
+                <input type="text" size="11" id="newfn" class="newfirstname">
+              </div>
+              <script></script>
+              <br> <br>
+
+              <div>
+                <label>Last Name: </label><span id="ln" class="lastname"></span>
+                <input type="text" size="11" id ="newln" class="newfirstname">
+              </div>
+
+              <br> <br>
+
+              <div>
+                <label>Phonenumber: </label><span id="pn" class="phonenumber"></span>
+                <input type="text" size="11" id ="newpn" class="newfirstname">
+              </div>
+
+              <br> <br>
+
+              <div>
+                <label>Email: </label><span id="em" class="email"></span>
+                <input type="text" size="20" id ="newem" class="newfirstname">
+              </div>
+
+              <br> <br>
+            </div>
+
+            <div>
+              <input type="submit" id="updateprofile2" name="updateprofile2" value="Update Profile" />
+            </div>
+
+            <br> <br>
+
+            <form action="account.html">
+              <input type="submit" id="cancel" name="cancel" value="Cancel" />
+            </form>
+      </form>
+    </div>
+</body>
+
+<script>
+  $(document).ready(function () {
+    console.log('update prfofile1');
+      $("#updateprofile").click(function () {
+          console.log('update prfofile2');
+          $("#updateprofile-popup").show();
+          document.getElementById("newfn").value = $("#fn").val();
+          document.getElementById("newln").value = $("#ln").val();
+          document.getElementById("newpn").value = $("#pn").val();
+          document.getElementById("newem").value = $("#em").val();
+          console.log("test1" + $("#fn").val());
+      });
+      
+      //Contact Form validation on click event
+      $("#updateprofile-form").on("submit", function () {
+          var valid = true;
+          $(".info").html("");
+          $("inputBox").removeClass("input-error");
+          
+          var firstName = $("#fn").val();
+          var lastName = $("#ln").val();
+          var phoneNumber = $("#pn").val();
+          var email = $("#em").val();
+  
+          if (firstName == "") {
+              $("#fn").html("required.");
+              $("#fn").addClass("input-error");
+          }
+          if (lastName == "") {
+              $("#lm").html("required.");
+              $("#lm").addClass("input-error");
+              valid = false;
+          }
+          if (phoneNumber == "") {
+              $("#pn").html("required.");
+              $("#pn").addClass("input-error");
+              valid = false;
+          }
+          if (!email.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
+          {
+              $("#em").html("invalid.");
+              $("#em").addClass("input-error");
+              valid = false;
+          }
+          return valid;
+      });
+  });
+</script>
+
+</html>
